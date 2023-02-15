@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="https://github.com/MGalaCyber.png">
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/89c077090a.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/main.js"></script>
+    <title>CountDown to New Years</title>
+</head>
+<body>
+    <div class="container">
+        
+        <!-- Logo -->
+        <header>
+            <ul>
+                <label><img src="https://github.com/MGalaCyber.png" alt="https://github.com/MGalaCyber.png"></label>
+            </ul>
+        </header>
+        
+        <!-- Showing days, hoyrs, minutes, seconds -->
+        <h3><span>CountDown to New Years</span><script>document.write(new Date().getFullYear() + 1);</script></h3>
+        <div class="countdown">
+            <div id="day">NA</div>
+            <div id="hour">NA</div>
+            <div id="minute">NA</div>
+            <div id="second">NA</div>
+        </div>
+    </div>
+    
+    <!-- Sosial Part -->
+    <!--<div class="social">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-youtube"></i>
+    </div> -->
+    
+    <!-- Calendar -->
+    <div class="calendar">
+        <p id="monthName"></p>
+        <p id="dayName"></p>
+        <p id="dayNumber"></p>
+        <p id="year"></p>
+    </div>
+    
+    <!-- JavaScript Part -->
+    
+    <script>
+        
+        //Calendar
+        const lang = navigator.language;
+        let date = new Date();
+
+        let dayNumber = date.getDate();
+        let month = date.getMonth();
+        let dayName = date.toLocaleString(lang,{weekday: 'long'})
+        let monthName = date.toLocaleString(lang,{month: 'long'})
+        let year = date.getFullYear()
+
+        document.getElementById('monthName').innerHTML = monthName;
+        document.getElementById('dayName').innerHTML = dayName;
+        document.getElementById('dayNumber').innerHTML = dayNumber;
+        document.getElementById('year').innerHTML = year;
+    </script>
+    
+    <!-- Footer -->
+    <footer>
+        <p>Copyright &copy; 2020 - <script>document.write(new Date().getFullYear());</script>, MGalaCyber</p>
+    </footer>
+    
+    <!-- Particle -->
+    <section id="particles-js"></section>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

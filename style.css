@@ -1,0 +1,183 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;   
+}
+body
+{
+    background: #000 url(images/bg.jpg);
+    background-attachment: fixed;
+    background-blend-mode: hard-light;
+    width: auto;
+}
+
+/* Calendar */
+.calendar
+{
+    position: relative;
+    left: 67.5em;
+    top: 5em;
+    width: 150px;
+    background: #e6e6e6;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    --webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0004);
+    box-shadow: 0 0 1px rgba(0,0,0,0.1);
+    box-shadow: 0 0 7px rgba(0,0,0.1);
+}
+.calendar #monthName
+{
+    position: relative;
+    padding: 5px 10px;
+    background: #ff6331;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow: 0 0 7px rgba(0,0,0,1);
+}
+.calendar #dayName
+{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #4d4d4d;
+}
+.calendar #dayNumber
+{
+    margin-top: 4px;
+    line-height: 1em;
+    font-size: 60px;
+    font-weight: 700;
+    color: #333;
+}
+.calendar #year
+{
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    background: #80b3ff;
+    color: #4d4d4d;
+}
+
+/* Logo */
+header label img
+{
+    width: 60px;
+    position: relative;
+    padding-bottom: 0px;
+    top: -6.95em;
+    right: 34em;
+}
+
+/* Footer */
+footer
+{
+    position: relative;
+	bottom: -28.2em;
+    width: auto;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 8px;
+	font-weight: 400;
+}
+
+/* Particles */
+section#particles-js
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 34.5px;
+}
+
+/* Container */
+.container
+{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    right: 100px;
+    bottom: 80px;
+    background: url(images/bg.jpg);
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 50px 50px rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px rgba(0,0,0.1);
+}
+.container h3
+{
+    text-align: center;
+    font-size: 5em;
+    line-height: 0.7em;
+    color: #333;
+    margin-top: -170px;
+}
+.container h3 span
+{
+    display: block;
+    font-weight: 9;
+    letter-spacing: 6px;
+    font-size: 0.3em;
+}
+
+/* CountDown */
+.countdown
+{
+    display: flex;
+    margin-top: 90px;
+}
+.countdown div
+{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    margin: 35px;
+    font-size: 3em;
+    font-weight: 500;
+}
+.countdown div:before
+{
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    background: #ff0;
+    color: #333;
+    font-size: 0.35em;
+    line-height: 35px;
+    font-weight: 300;
+}
+.countdown #day:before
+{
+    content: 'Days';
+	font-weight: 700;
+}
+.countdown #hour:before
+{
+    content: 'Hours';
+	font-weight: 700;
+}
+.countdown #minute:before
+{
+    content: 'Minutes';
+	font-weight: 700;
+}
+.countdown #second:before
+{
+    content: 'Seconds';
+	font-weight: 700;
+}
